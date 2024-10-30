@@ -1,7 +1,7 @@
-all: number_server
+all: number-server
   
-number_server: number_server.c
-  gcc -std=c11 -Wall -Wno-unused-variable -fsanitize=address -g number_server.c -o number_server
+pwcrack: number-server.c
+    gcc -std=c11 -Wall -Wno-unused-variable -fsanitize=address -g number-server.c -o number-server
 
 clean:
-  rm -f number_server
+    rm -f number-server
